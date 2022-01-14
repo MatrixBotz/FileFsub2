@@ -111,7 +111,7 @@ async def start_command(client: Client, message: Message):
                 pass
     else:
         buttons = [
-            [InlineKeyboardButton("🌐 About me", callback_data="about")],
+            [InlineKeyboardButton("🌐 About Me", callback_data="about")],
             [
                 InlineKeyboardButton("📢 Channel", url=client.invitelink),
                 InlineKeyboardButton("💭 Group", url=client.invitelink2),
@@ -142,8 +142,8 @@ async def start_command(client: Client, message: Message):
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-            InlineKeyboardButton("Channel", url=client.invitelink),
-            InlineKeyboardButton("Group", url=client.invitelink2),
+            InlineKeyboardButton("Join Channel", url=client.invitelink),
+            InlineKeyboardButton("Join Group", url=client.invitelink2),
         ],
     ]
     try:
